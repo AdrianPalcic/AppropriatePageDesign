@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <footer className="flex w-full px-4 sm:px-16 gap-10 flex-wrap mt-20">
-      <div className="flex-1 flex flex-col ">
+      <div className="flex-1 flex flex-col min-w-[280px]">
         <h2 className="mb-2 text-[30px] font-semibold">APDESIGN</h2>
         <p className="text-grayCustom ">A Digital solutions agency</p>
         <Link
@@ -43,7 +43,7 @@ const Footer = () => {
           appropriatepage.design@gmail.com
         </Link>
       </div>
-      <div className="flex-1 min-w-[150px] flex flex-col gap-2">
+      <div className="flex-1 min-w-[280px] flex flex-col gap-2">
         <h2 className="mb-2 text-[20px] font-semibold">USLUGE</h2>
         {usluge.map((usluga) => (
           <Link
@@ -55,7 +55,7 @@ const Footer = () => {
           </Link>
         ))}
       </div>
-      <div className="flex-1 min-w-[150px] flex flex-col gap-2">
+      <div className="flex-1 min-w-[280px] flex flex-col gap-2">
         <h2 className="mb-2 text-[20px] font-semibold">Informacije</h2>
         {informacije.map((info) => (
           <Link
@@ -67,7 +67,7 @@ const Footer = () => {
           </Link>
         ))}
       </div>
-      <div className="flex-1 min-w-[150px]">
+      <div className="flex-1 min-w-[280px]">
         <h2 className="mb-2 text-[20px] font-semibold">Društvene mreže</h2>
         <div className="flex gap-4 mt-2">
           <Link href={"https://www.instagram.com/apd_esign/"}>
