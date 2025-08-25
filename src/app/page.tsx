@@ -1,15 +1,9 @@
 import Services from "./components/Services";
 import Button from "./components/Button";
-import PortfolioCard from "./components/PortfolioCard";
 import Link from "next/link";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger, SplitText } from "gsap/all";
-import gsap from "gsap";
 import HeroSection from "./components/HeroSection";
-import AnimatedHeading from "./components/AnimatedHeading";
 import HomeCTA from "./components/HomeCTA";
 import Testimonials from "./components/Testimonials";
-import BlogHome from "./components/BlogHome";
 import ContactForm from "./components/ContactForm";
 import PortfolioHome from "./components/PortfolioHome";
 

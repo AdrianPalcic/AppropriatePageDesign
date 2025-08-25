@@ -73,15 +73,6 @@ const Testimonials = () => {
         toggleActions: "play none none none",
       },
     });
-
-    // cleanup on unmount / rerun
-    return () => {
-      try {
-        headingSplit.revert();
-      } catch (e) {}
-      tl.kill();
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
   }, []);
 
   return (

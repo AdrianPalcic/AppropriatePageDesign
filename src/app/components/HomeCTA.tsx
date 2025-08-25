@@ -113,14 +113,6 @@ const HomeCTA = () => {
         "-=0.2"
       );
     }
-
-    return () => {
-      try {
-        split.revert();
-      } catch (e) {}
-      enterTL.kill();
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
   }, []);
 
   return (

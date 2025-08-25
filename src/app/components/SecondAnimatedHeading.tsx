@@ -30,15 +30,6 @@ const SecondAnimatedHeading = () => {
         // markers: true,             // enable while debugging
       },
     });
-
-    // cleanup on unmount / rerun
-    return () => {
-      try {
-        split.revert();
-      } catch (e) {}
-      tl.kill();
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
   }, []);
 
   return (

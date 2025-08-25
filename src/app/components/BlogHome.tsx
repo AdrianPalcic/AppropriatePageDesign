@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedHeading from "./AnimatedHeading";
 import BlogCard from "./BlogCard";
 import SecondAnimatedHeading from "./SecondAnimatedHeading";
 
