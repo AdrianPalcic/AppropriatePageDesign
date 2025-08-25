@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-semibold bg-primary transition-colors duration-500  hover:bg-blue-600 text-[14px] sm:text-[16px] text-black;
+  }
+  .subheading {
+    @apply text-grayCustom text-center text-[16px] sm:text-[18px];
+  }
+  .heading {
+    @apply text-[30px] sm:text-[30px]  md:text-[40px] lg:text-[50px] text-center font-semibold uppercase;
+  }
+  .underline {
+    @apply w-full h-[0.5px] border-[1px] border-primary border-solid mb-1;
+  }
+  .dot {
+    @apply h-[6px] w-[6px] rounded-full bg-primary;
+  }
+  .tag {
+    @apply bg-tagColor py-2 px-4 flex items-center justify-center transition-all duration-300 hover:bg-primary;
+  }
+  .testimonial {
+    @apply w-full md:w-[300px] md:min-w-[300px] md:flex-shrink-0
+         flex flex-col justify-end items-center p-4
+         bg-darkSecondary h-fit rounded-md;
+  }
+  .blog-img {
+    @apply w-full object-cover rounded-md;
+  }
+}
+.remove-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move left by half since we duplicated images */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll {
+    animation: none;
+  }
+}
