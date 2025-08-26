@@ -13,6 +13,7 @@ const Footer = () => {
 
   const informacije = [
     "Blog",
+    "Portfolio",
     "Kontakt",
     "Politika Privatnosti",
     "Uvjeti Korištenja",
@@ -48,7 +49,7 @@ const Footer = () => {
         {usluge.map((usluga) => (
           <Link
             className="text-grayCustom text-[18px] transition-all duration-300 hover:text-white"
-            href={`/services/${usluga}`}
+            href={`/services/${usluga.toLowerCase()}`}
             key={usluga}
           >
             {usluga}
@@ -60,7 +61,7 @@ const Footer = () => {
         {informacije.map((info) => (
           <Link
             className="text-grayCustom text-[18px] transition-all duration-300 hover:text-white"
-            href={`/services/${info}`}
+            href={`/services/${info.toLowerCase()}`}
             key={info}
           >
             {info}

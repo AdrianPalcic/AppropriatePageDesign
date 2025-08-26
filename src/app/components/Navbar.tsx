@@ -23,7 +23,7 @@ const Navbar = () => {
         <ul className="hidden md:flex  gap-12 text-[18px]">
           {navbarData.map((data) => (
             <Link
-              href={`/${data}`}
+              href={`/${data.toLowerCase()}`}
               key={data}
               className=" group transition duration-300"
             >
