@@ -10,7 +10,6 @@ type dataType = {
   title: string;
   text: string;
   tags: string[];
-  tools: string[];
 };
 
 const PortfolioHome = () => {
@@ -21,7 +20,6 @@ const PortfolioHome = () => {
       title: "Grof's Jewlery",
       text: "Unikatna kolekcija stranice za ručno rađeni nakit od papira, fokus na priču i detalje...",
       tags: ["Webshop", "Branding", "Ecommerce"],
-      tools: ["Design", "SEO", "Nextjs", "WooCommerce"],
     },
     {
       firstImg: "/rename.png",
@@ -29,7 +27,6 @@ const PortfolioHome = () => {
       title: "Simone Design",
       text: "Moderan one-page dizajn za dizajnericu interijera, s naglaskom na estetiku i eleganciju...",
       tags: ["Lading Page", "Branding", "Logo Design"],
-      tools: ["Design", "SEO", "Nextjs"],
     },
     {
       firstImg: "/homegrass-1.png",
@@ -37,7 +34,6 @@ const PortfolioHome = () => {
       title: "Homegrass",
       text: "Cjelokupni brand paket – od početne stranice do više podstranica i online identiteta...",
       tags: ["Website", "Branding", "CMS"],
-      tools: ["Design", "SEO", "Reactjs", "WP Headless"],
     },
   ];
 

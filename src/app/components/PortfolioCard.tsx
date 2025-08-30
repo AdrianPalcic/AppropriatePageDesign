@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import Button from "./Button";
+import { ChevronRight } from "lucide-react";
 
 const PortfolioCard = ({ item }: { item: any }) => {
-  const { firstImg, secondImg, title, text, tools, tags } = item;
+  const { firstImg, secondImg, title, text, tags } = item;
 
   return (
     <div
@@ -41,12 +43,14 @@ const PortfolioCard = ({ item }: { item: any }) => {
         </div>
         <div>
           <div className="underline"></div>
-          <div className="flex gap-4 text-grayCustom text-[18px] items-center">
-            <h4>{tools[0]}</h4>
-            <div className="dot"></div>
-            <h4>{tools[1]}</h4>
-            <div className="dot"></div>
-            <h4>{tools[2]}</h4>
+          <div className=" text-grayCustom text-[18px] mt-4">
+            <Link
+              href={`/portfolio/${title}`}
+              className="flex gap-4 items-center w-fit group"
+            >
+              <Button text="Pogledaj" />
+              <ChevronRight className="text-primary duration-200 transition-all hover:text-blue-500 group-hover:translate-x-1" />
+            </Link>
           </div>
         </div>
       </div>

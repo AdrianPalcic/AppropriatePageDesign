@@ -26,6 +26,7 @@ export default function Home() {
       <PortfolioHome />
 
       <HomeCTA />
+
       <Testimonials />
 
       {/* <BlogHome /> */}
