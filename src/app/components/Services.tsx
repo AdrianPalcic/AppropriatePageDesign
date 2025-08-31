@@ -50,7 +50,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="mx-2 mb-10 sm:mx-16 bg-darkSecondary w-full md:w-[80%] rounded-md  px-6 py-2 md:py-14">
+    <div className="mx-auto mb-10  bg-darkSecondary w-full md:w-[80%] rounded-md  px-6 py-2 md:py-14 ">
       <div
         className="
           grid 
@@ -59,6 +59,7 @@ const Services = () => {
           lg:grid-cols-3 
           gap-10
           gap-y-16
+
         "
       >
         {data.map((item) => (

@@ -26,7 +26,7 @@ const Testimonials = () => {
       text: "Adrian je naš webshop učinio jednostavnim i pouzdanim za kupce: brza navigacija, jasni CTA-i i besprijekorna integracija plaćanja. Prodaja i povratne informacije kupaca su se značajno popravile nakon lansiranja. Toplo ga preporučujem svakome tko želi povećati online prihode.",
       icon: <User />,
       name: "Iva",
-      city: "Gorf's Jewlery",
+      city: "Grof's Jewlery",
     },
     {
       text: "Landing page koji je Adrian izradio savršeno prikazuje moj portfolio — elegantno, pregledno i vizualno snažno. Umjesto općih upita, počele su pristići konkretne ponude i ozbiljni klijenti. Izvrsna izvedba i odlična komunikacija tijekom cijelog procesa.",

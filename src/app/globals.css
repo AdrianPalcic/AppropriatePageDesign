@@ -28,7 +28,7 @@ body {
     @apply text-grayCustom text-center text-[16px] sm:text-[18px];
   }
   .heading {
-    @apply text-[30px] sm:text-[30px]  md:text-[40px] lg:text-[50px] text-center font-semibold uppercase;
+    @apply text-[30px] sm:text-[30px]  md:text-[40px] lg:text-[50px] text-center font-black uppercase;
   }
   .underline {
     @apply w-full h-[0.5px] border-[1px] border-primary border-solid mb-1;
