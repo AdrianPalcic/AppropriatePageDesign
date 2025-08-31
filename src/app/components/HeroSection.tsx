@@ -9,25 +9,23 @@ import { SplitText } from "gsap/all";
 import gsap from "gsap";
 
 const HeroSection = () => {
-  // useGSAP(() => {
-  //   // Split the text into characters
-  //   const heroSplit = new SplitText("#hero-text", {
-  //     type: "chars",
-  //     charsClass: "char",
-  //   });
+  useGSAP(() => {
+    // Split the text into characters
+    const heroSplit = new SplitText("#hero-text", {
+      type: "chars",
+      charsClass: "char",
+    });
 
-  //   // Hide all characters initially
-  //   gsap.set(heroSplit.chars, {
-  //     opacity: 0,
-  //   });
+    gsap.set(heroSplit.chars, {
+      opacity: 0,
+    });
 
-  //   // Typewriter animation
-  //   gsap.to(heroSplit.chars, {
-  //     opacity: 1,
-  //     duration: 0.1, // Speed of each character appearing
-  //     stagger: 0.06,
-  //   });
-  // }, []);
+    gsap.to(heroSplit.chars, {
+      opacity: 1,
+      duration: 0.1,
+      stagger: 0.06,
+    });
+  }, []);
 
   return (
     // <section
@@ -43,7 +41,10 @@ const HeroSection = () => {
     // </section>
 
     <section className=" mb-20 flex flex-col  justify-center">
-      <h1 className=" text-4xl sm:text-6xl lg:text-8xl font-medium text-blue-50 ">
+      <h1
+        id="hero-text"
+        className=" text-4xl sm:text-6xl lg:text-8xl font-medium text-blue-50 "
+      >
         Vaše središte za dizajn, <br /> razvoj i brendiranje
       </h1>
       <p className="paragraph text-lg mt-8  font-sans">
