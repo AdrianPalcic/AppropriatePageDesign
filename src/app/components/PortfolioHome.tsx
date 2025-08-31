@@ -38,7 +38,10 @@ const PortfolioHome = () => {
   ];
 
   return (
-    <section id="portfolio" className="mt-40 w-full flex flex-col items-center">
+    <section
+      id="portfolio"
+      className="mt-40 w-full flex flex-col items-center "
+    >
       <AnimatedHeading text="Od Ideje do Rješenja" />
       <p className="subheading mb-10">
         Pregledajte naš portfolio i pronađite inspiraciju za vlastiti projekt.

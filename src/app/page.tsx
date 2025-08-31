@@ -14,7 +14,7 @@ import HomeCTA from "./components/HomeCTA";
 
 export default function Home() {
   return (
-    <main className="flex flex-col px-1 lg:px-4 sm:px-16 w-full mt-12">
+    <main className="flex flex-col px-1 lg:px-4 sm:px-16 w-full mt-12 ">
       <HeroSection />
 
       <Services />

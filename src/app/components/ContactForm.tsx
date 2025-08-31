@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <section id="contact-form" className="mt-40 w-full flex justify-center">
-      <div className="sm:w-[80%] w-full mx-0 sm:mx-16 bg-darkSecondary flex flex-col py-10 px-6">
+      <div className="sm:w-[80%] w-full mx-0 sm:mx-16 bg-gradient-to-br from-primary/5 to-transparent flex flex-col py-10 px-6">
         <h2 className="uppercase text-[30px] font-semibold text-center">
           Stvorimo nešto zajedno
         </h2>
@@ -220,10 +220,7 @@ const ContactForm: React.FC = () => {
           </label>
 
           <div className="flex justify-center mt-6">
-            <button
-              type="submit"
-              className="px-6 py-3 rounded-md bg-primary text-white hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-            >
+            <button type="submit" className="btn">
               Pošalji
             </button>
           </div>

@@ -3,21 +3,21 @@ import React from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-  const navbarData = ["Usluge", "Portfolio", "Blog"];
+  const navbarData = ["Usluge", "Portfolio", "Blog", "Kontakt"];
 
   return (
     <header className="w-full py-4 px-4 sm:px-16">
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between  md:items-center">
         <div>
           <Link href={"/"}>
             <img
               src={"/logo.png"}
               alt="Web development and design Hrvatska"
-              className="mix-blend-lighten w-[60px] h-[50px]"
+              className="mix-blend-lighten w-[60px] h-[50px] sm:h-[100px] sm:w-[120px]"
             />
           </Link>
         </div>
-        <ul className="hidden md:flex  gap-12 text-[18px]">
+        <ul className="flex flex-col md:flex-row  gap-12 text-[18px]">
           {navbarData.map((data) => (
             <Link
               href={`/${data.toLowerCase()}`}

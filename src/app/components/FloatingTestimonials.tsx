@@ -13,15 +13,14 @@ const testimonials = [
     name: "Davor",
     role: "Homegrass",
     content:
-      "This platform transformed our business operations completely. The results exceeded our expectations in every way.",
+      "Rad je bio izuzetno efikasan i profesionalan. Iako je proces trajao nešto duže od očekivanog, rezultat je bio više nego vrijedan čekanja. Sa APDesignom smo u potpunosti redizajnirali našu web stranicu koja nas sada istinski predstavlja i odražava kvalitetu našeg brenda.",
     avatar: <User />,
   },
   {
     id: 2,
     name: "Tamara",
     role: "Tipsy Muse",
-    content:
-      "Outstanding service and incredible attention to detail. The team delivered exactly what we needed on time.",
+    content: "Želim samo reći Hvala Vam puno!",
     avatar: <User />,
   },
   {
@@ -29,15 +28,15 @@ const testimonials = [
     name: "Iva",
     role: "Grof's Jewlery",
     content:
-      "The impact on our marketing campaigns was immediate and substantial. Highly recommend to any growing business.",
+      "Webshop smo otvorili u tren oka, a kvaliteta se nije izgubila ni u najmanjem detalju. APDesign je uspio implementirati sve naše zahtjeve - od sigurnih plaćanja do intuitivnog admin panela. Brzina izrade nas je iznenadila, ali još više pažnja posvećena korisničkom iskustvu.",
     avatar: <User />,
   },
   {
     id: 4,
     name: "Simone Nevistić",
-    role: "Simode Design",
+    role: "Simone Design",
     content:
-      "Game-changing solution that helped us scale from startup to enterprise level. Exceptional quality and support.",
+      "Taman sam krenula s vlastitim poslom, a sa novom web stranicom mi sad dolazi toliko upita na koje nemam vremena odgovoriti!",
     avatar: <User />,
   },
 ];
@@ -108,7 +107,7 @@ export function FloatingTestimonials() {
         <div className="text-center mb-12">
           <h2 className="heading">Što kažu drugi</h2>
           <p className="text-muted-foreground text-lg">
-            Trusted by industry leaders worldwide
+            Priče zadovoljnih klijenata
           </p>
         </div>
 

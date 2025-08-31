@@ -103,7 +103,7 @@ export default function RootLayout({
     >
       <body
         suppressHydrationWarning
-        className="antialiased font-playfair bg-dark"
+        className="antialiased font-playfair bg-dark bg-gradient-to-br from-primary/5 to-transparent"
       >
         <Navbar />
 

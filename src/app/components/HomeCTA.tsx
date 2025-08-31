@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HomeCTA = () => {
@@ -19,6 +20,14 @@ const HomeCTA = () => {
         Spoj dizajna i funkcionalnosti nam je prioritet – koristimo provjerene
         tehnologije, SEO optimizaciju i prilagođene rješenja kako bismo
         izgradili web koji ne samo da izgleda odlično, nego i donosi rezultate.
+        <br />
+        <br />
+        <Link
+          href={"/about"}
+          className="border-solid border-b-[1px] pb-1 border-primary "
+        >
+          <span className=""> Pročitajte više o nama</span>
+        </Link>
       </p>
     </section>
   );

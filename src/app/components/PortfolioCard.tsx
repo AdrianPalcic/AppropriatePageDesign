@@ -10,7 +10,7 @@ const PortfolioCard = ({ item, idx }: { item: any; idx: number }) => {
   return (
     <div
       id="portfolio-card"
-      className={`flex flex-col  bg-darkSecondary justify-between h-fit lg:h-[450px] p-2 lg:p-4 rounded-md w-full lg:w-[80%] lg:gap-10 mb-10  lg:flex-row relative ${
+      className={`flex flex-col  bg-gradient-to-br from-primary/5 to-transparent justify-between h-fit lg:h-[450px] p-2 lg:p-4 rounded-md w-full lg:w-[80%] lg:gap-10 mb-10  lg:flex-row relative ${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
@@ -51,7 +51,9 @@ const PortfolioCard = ({ item, idx }: { item: any; idx: number }) => {
               href={`/portfolio/${title}`}
               className="flex gap-4 items-center w-fit group text-white"
             >
-              <Button text="Pogledaj" />
+              <p className="font-sans transition-colors duration-200 hover:text-primary ">
+                Pogledaj
+              </p>
               <ChevronRight className="text-primary duration-200 transition-all hover:text-blue-500 group-hover:translate-x-1" />
             </Link>
           </div>

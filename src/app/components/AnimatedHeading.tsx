@@ -28,7 +28,7 @@ const AnimatedHeading = ({ text }: { text: string }) => {
   }, []);
 
   return (
-    <h1 id="animated-heading" className="heading text-[50px]">
+    <h1 id="animated-heading" className="heading ">
       {text}
     </h1>
   );

@@ -42,8 +42,7 @@ const HeroSection = () => {
     //   <SlideShow />
     // </section>
 
-    <section className=" mb-20 flex flex-col  justify-center px-4">
-      <p className="mb-6 font-regular text-sm font-sans">APDesign</p>
+    <section className=" mb-20 flex flex-col  justify-center">
       <h1 className=" text-4xl sm:text-6xl lg:text-8xl font-medium text-blue-50 ">
         Vaše središte za dizajn, <br /> razvoj i brendiranje
       </h1>
