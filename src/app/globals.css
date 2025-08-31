@@ -22,7 +22,7 @@ body {
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded-sm font-semibold bg-primary transition-colors duration-500  hover:bg-blue-600 text-[14px] sm:text-[16px] text-black;
+    @apply px-4 py-2 border-[2px] border-blue-800 border-solid rounded-xl text-[16px] uppercase;
   }
   .subheading {
     @apply text-grayCustom text-center text-[16px] sm:text-[18px];
