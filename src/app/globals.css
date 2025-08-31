@@ -20,11 +20,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.paragraph {
+  opacity: 0.6;
+}
+.flex-one {
+  flex: 1;
+}
+
 @layer components {
   .btn {
-    @apply px-4 py-2 border-[2px] border-blue-800 border-solid rounded-xl text-[16px] uppercase;
+    @apply px-4 py-2 border-[2px] border-blue-800 border-solid rounded-xl text-[16px] font-sans w-fit  transition-all duration-300 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20;
   }
-  .subheading {
+  .active {
+    @apply bg-tagColor;
+  }
+  .heading {
     @apply text-grayCustom text-center text-[16px] sm:text-[18px];
   }
   .heading {
@@ -37,7 +47,7 @@ body {
     @apply h-[6px] w-[6px] rounded-full bg-primary;
   }
   .tag {
-    @apply bg-tagColor py-2 px-4 flex items-center justify-center transition-all duration-300 hover:bg-primary;
+    @apply bg-tagColor py-2 px-4 flex items-center justify-center transition-all duration-300 hover:bg-blue-800 font-sans;
   }
   .testimonial {
     @apply w-full md:w-[300px] md:min-w-[300px] md:flex-shrink-0

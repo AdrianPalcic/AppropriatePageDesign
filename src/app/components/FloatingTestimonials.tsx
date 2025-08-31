@@ -119,7 +119,7 @@ export function FloatingTestimonials() {
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"
+              className="bg-card  rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
 

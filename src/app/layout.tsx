@@ -50,6 +50,42 @@ const workSans = localFont({
   variable: "--font-work-sans",
 });
 
+const playfairDisplay = localFont({
+  src: [
+    {
+      path: "./fonts/PlayfairDisplay-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/PlayfairDisplay-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./fonts/PlayfairDisplay-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/PlayfairDisplay-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/PlayfairDisplay-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/PlayfairDisplay-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-playfair-display",
+});
+
 export const metadata: Metadata = {
   title: "APDesign | Website development and Design",
   description: "Website Development and Design Hrvatska",
@@ -61,8 +97,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={workSans.variable}>
-      <body suppressHydrationWarning className="antialiased font-sans bg-dark">
+    <html
+      lang="en"
+      className={`${workSans.variable} ${playfairDisplay.variable} `}
+    >
+      <body
+        suppressHydrationWarning
+        className="antialiased font-playfair bg-dark"
+      >
         <Navbar />
 
         {children}

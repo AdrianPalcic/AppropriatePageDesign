@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Button from "./Button";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -11,12 +10,10 @@ const Navbar = () => {
       <nav className="flex justify-between items-center">
         <div>
           <Link href={"/"}>
-            <Image
+            <img
               src={"/logo.png"}
               alt="Web development and design Hrvatska"
-              width={120}
-              height={50}
-              className="mix-blend-lighten"
+              className="mix-blend-lighten w-[60px] h-[50px]"
             />
           </Link>
         </div>
@@ -34,12 +31,6 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-
-        <div>
-          <Link href="/kontakt">
-            <Button text={"Radimo Zajedno"} />
-          </Link>
-        </div>
       </nav>
     </header>
   );

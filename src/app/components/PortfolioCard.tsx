@@ -3,13 +3,16 @@ import React from "react";
 import Button from "./Button";
 import { ChevronRight } from "lucide-react";
 
-const PortfolioCard = ({ item }: { item: any }) => {
+const PortfolioCard = ({ item, idx }: { item: any; idx: number }) => {
   const { firstImg, secondImg, title, text, tags } = item;
+  const reverse = idx % 2 === 1; // Ovdje određujete reverse
 
   return (
     <div
       id="portfolio-card"
-      className={`flex flex-col  bg-darkSecondary justify-between h-fit lg:h-[450px] p-2 lg:p-4 rounded-md w-full lg:w-[80%] lg:gap-10 mb-10  lg:flex-row relative`}
+      className={`flex flex-col  bg-darkSecondary justify-between h-fit lg:h-[450px] p-2 lg:p-4 rounded-md w-full lg:w-[80%] lg:gap-10 mb-10  lg:flex-row relative ${
+        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      }`}
     >
       <Link
         href={`/portfolio/${title}`}
@@ -32,7 +35,7 @@ const PortfolioCard = ({ item }: { item: any }) => {
       <div className="text-container flex-1 mt-5 flex flex-col justify-between">
         <div>
           <h3 className="uppercase font-bold text-[24px] mb-2">{title}</h3>
-          <p className="subheading !text-left">{text}</p>
+          <p className="subheading !text-left font-sans">{text}</p>
           <div className="flex flex-wrap gap-2 items-center mt-2 mb-6 lg:mb-0 ">
             {tags.map((tag: string) => (
               <div className="tag" key={tag}>
@@ -46,7 +49,7 @@ const PortfolioCard = ({ item }: { item: any }) => {
           <div className=" text-grayCustom text-[18px] mt-4">
             <Link
               href={`/portfolio/${title}`}
-              className="flex gap-4 items-center w-fit group"
+              className="flex gap-4 items-center w-fit group text-white"
             >
               <Button text="Pogledaj" />
               <ChevronRight className="text-primary duration-200 transition-all hover:text-blue-500 group-hover:translate-x-1" />

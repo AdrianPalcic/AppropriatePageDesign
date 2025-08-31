@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-work-sans)", "sans-serif"],
+        playfair: ["var(--font-playfair-display)", "sans-serif"],
       },
 
       colors: {
@@ -16,6 +17,9 @@ module.exports = {
         grayCustom: "#676767",
         darkSecondary: "#0E1420",
         tagColor: "#192135",
+      },
+      screens: {
+        xs: "375px",
       },
     },
   },
