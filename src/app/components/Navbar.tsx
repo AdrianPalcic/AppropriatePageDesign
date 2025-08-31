@@ -17,7 +17,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="flex flex-col md:flex-row  gap-12 text-[18px]">
+        <ul className="hidden md:flex  gap-12 text-[18px]">
           {navbarData.map((data) => (
             <Link
               href={`/${data.toLowerCase()}`}
